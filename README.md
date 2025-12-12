@@ -2,7 +2,7 @@
 
 A modern, high-performance WhatsApp Business Dashboard built with the power of React, TypeScript, and shadcn/ui. This project meticulously replicates the visual experience of WhatsApp Web while providing a robust foundation for building enterprise-grade engagement systems, analytics dashboards, or CRM integrations.
 
-🚀 Live Demo: whatsapp-business-dashboard-elwl.vercel.app
+🚀 Live Demo:(https://whatsapp-business-dashboard-elwl.vercel.app/)
 
 📑 Table of Contents
 
