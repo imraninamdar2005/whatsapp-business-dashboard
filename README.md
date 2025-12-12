@@ -14,8 +14,6 @@ A modern, high-performance WhatsApp Business Dashboard built with the power of R
 
 📂 Project Structure
 
-📸 Screenshots & Demo
-
 ⚡ Setup & Installation
 
 📜 Available Scripts
@@ -144,24 +142,7 @@ src/
  ├── ⚛️ App.tsx           # Root component
  ├── 🚀 main.tsx          # Entry point
  └── 🎨 index.css         # Global styles & Tailwind directives
-
-
-📸 Screenshots & Demo
-
-🔴 Live Application
-
-👉 Click here to view the live demo
-
-🖥️ Dashboard Preview
-
-(Capture your screen and place dashboard.png in a /screenshots folder)
-
-<!--  -->
-
-📱 Mobile View
-
-<!--  -->
-
+ 
 🎥 Demo Video
 
 <!-- Watch the Walkthrough -->
