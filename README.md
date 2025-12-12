@@ -1,73 +1,317 @@
-# Welcome to your Lovable project
+ WhatsApp Business Dashboard
 
-## Project info
+A modern, high-performance WhatsApp Business Dashboard built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
+This project replicates the core visual experience of WhatsApp Web while providing a clean foundation for building real WhatsApp Business integrations, dashboards, analytics, or customer engagement systems.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🚀 Live Demo: whatsapp-business-dashboard-elwl.vercel.app
 
-## How can I edit this code?
+Table of Contents
 
-There are several ways of editing your application.
+Overview
 
-**Use Lovable**
+Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+Project Structure
 
-**Use your preferred IDE**
+Screenshots & Demo
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Setup & Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Available Scripts
 
-Follow these steps:
+Deployment Guide
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Environment Variables
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+API Integration (Optional)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Roadmap
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Contributing
+
+License
+
+Overview
+
+WhatsApp Business Dashboard is designed as a clean and modular frontend interface to simulate WhatsApp-style messaging workflows.
+It includes core UI components such as:
+
+Chat list
+
+Chat window
+
+Contact list
+
+Message bubbles
+
+Search functionality
+
+Although it currently uses mock data, the architecture allows quick integration with real APIs such as the WhatsApp Business Cloud API, WebSockets, or custom backend services.
+
+Features
+
+UI/UX
+
+Modern WhatsApp Web–inspired layout
+
+Responsive grid system
+
+Dark/light mode ready
+
+Smooth animations (optional)
+
+Chat System
+
+Chat list with avatars and last message preview
+
+Timestamp formatting
+
+Typing indicator support
+
+Message grouping & alignment
+
+Scroll-to-latest message behavior
+
+Components
+
+Fully reusable UI components
+
+Powered by shadcn/ui + TailwindCSS
+
+Iconography via Lucide Icons
+
+Developer Experience
+
+TypeScript-first architecture
+
+Vite for instant hot reload
+
+Modular folder structure
+
+Easy API binding points
+
+Tech Stack
+
+Category
+
+Technology
+
+Framework
+
+React + TypeScript
+
+Build Tool
+
+Vite
+
+UI Library
+
+shadcn/ui
+
+Styling
+
+Tailwind CSS
+
+Icons
+
+Lucide Icons
+
+State Management
+
+React Hooks (can extend to Zustand/Jotai)
+
+Project Structure
+
+src/
+ ├── components/
+ │   ├── chat/
+ │   ├── sidebar/
+ │   └── ui/
+ ├── data/
+ │   ├── contacts.ts
+ │   └── messages.ts
+ ├── layout/
+ │   └── DashboardLayout.tsx
+ ├── pages/
+ ├── App.tsx
+ ├── main.tsx
+ └── index.css
+
+
+
+Key principles:
+
+Component-driven development
+
+Separation of UI, data, and layout
+
+Easily scalable to multi-page or multi-module systems
+
+Screenshots & Demo
+
+Live Application
+
+🚀 View Live Demo
+
+Dashboard Preview
+
+<!-- Upload your image to a 'screenshots' folder and uncomment the line below -->
+
+<!--  -->
+
+(Place your screenshot here showing the main chat interface)
+
+Mobile Responsiveness
+
+<!--  -->
+
+Demo Video
+
+<!-- Link to Loom, YouTube, or generic video file -->
+
+Watch the Demo Video
+
+Setup & Installation
+
+1. Clone the repository
+
+git clone [https://github.com/imraninamdar2005/whatsapp-business-dashboardv2.git](https://github.com/imraninamdar2005/whatsapp-business-dashboardv2.git)
+cd whatsapp-business-dashboardv2
+
+
+2. Install dependencies
+
+npm install
+
+
+3. Run development server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+App runs at:
+http://localhost:5173
 
-**Use GitHub Codespaces**
+Available Scripts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Command
 
-## What technologies are used for this project?
+Description
 
-This project is built with:
+npm run dev
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Start development server
 
-## How can I deploy this project?
+npm run build
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Generate production build
 
-## Can I connect a custom domain to my Lovable project?
+npm run preview
 
-Yes, you can!
+Preview production build
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Deployment Guide
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+After running:
+
+npm run build
+
+
+The dist/ folder can be deployed on:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+Cloudflare Pages
+
+Any static hosting (Nginx, Apache)
+
+Vercel Deployment
+
+vercel deploy
+
+
+or drag the dist/ folder into the Vercel dashboard.
+
+Environment Variables
+
+For the mock version, no environment variables are required.
+
+To enable real API integrations, create a .env file in the root directory:
+
+VITE_WHATSAPP_API_URL=[https://graph.facebook.com/v17.0/](https://graph.facebook.com/v17.0/)
+VITE_WHATSAPP_ACCESS_TOKEN=your_access_token_here
+VITE_WEBHOOK_URL=your_webhook_url
+
+
+API Integration (Optional)
+
+To integrate with the WhatsApp Business Cloud API, you can:
+
+Replace mock data in src/data/ with live API calls
+
+Use fetch or Axios for message CRUD
+
+Add real-time updates via:
+
+WebSockets
+
+Firebase
+
+Pusher
+
+GraphQL Subscriptions
+
+Roadmap
+
+Short-Term
+
+[ ] Add search/filter
+
+[ ] Add dark mode
+
+[ ] Improve message bubble styling
+
+[ ] Add message status indicators
+
+Mid-Term
+
+[ ] Connect to a backend API
+
+[ ] Add analytics widgets
+
+[ ] Add contact creation/editing
+
+[ ] Real-time chat (WebSockets)
+
+Long-Term
+
+[ ] Multi-user support
+
+[ ] Role-based access
+
+[ ] WhatsApp API template messages
+
+[ ] Cloud-based storage (Supabase / Firebase)
+
+Contributing
+
+Contributions are welcome.
+
+Fork the repository
+
+Create a feature branch
+
+Commit changes
+
+Submit a pull request
+
+License
+
+Distributed under the MIT License.
+You may use, modify, and distribute this project freely.
