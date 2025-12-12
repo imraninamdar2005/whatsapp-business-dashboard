@@ -288,6 +288,3 @@ We love contributions! Let's build something amazing together.
 Distributed under the MIT License.
 Build, modify, and distribute freely.
 
-<p align="center">
-Made with ❤️ by <a href="https://www.google.com/search?q=https://github.com/imraninamdar2005">Imran Inamdar</a>
-</p>
