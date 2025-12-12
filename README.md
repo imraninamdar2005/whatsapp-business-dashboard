@@ -174,8 +174,8 @@ Get up and running in less than 2 minutes!
 
 1️⃣ Clone the repository
 
-git clone [https://github.com/imraninamdar2005/whatsapp-business-dashboardv2.git](https://github.com/imraninamdar2005/whatsapp-business-dashboardv2.git)
-cd whatsapp-business-dashboardv2
+git clone [https://github.com/imraninamdar2005/whatsapp-business-dashboard.git](https://github.com/imraninamdar2005/whatsapp-business-dashboard.git)
+cd whatsapp-business-dashboard
 
 
 2️⃣ Install dependencies
@@ -222,18 +222,6 @@ Deploy the dist/ folder to Vercel, Netlify, or GitHub Pages.
 Vercel Quick Deploy:
 
 vercel deploy
-
-
-🔐 Environment Variables
-
-For the mock version, you are good to go! 🟢
-
-To enable real API integrations, create a .env file:
-
-VITE_WHATSAPP_API_URL=[https://graph.facebook.com/v17.0/](https://graph.facebook.com/v17.0/)
-VITE_WHATSAPP_ACCESS_TOKEN=your_access_token_here
-VITE_WEBHOOK_URL=your_webhook_url
-
 
 🔌 API Integration (Optional)
 
